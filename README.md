@@ -3,7 +3,7 @@
 
   kdisplay.py  ---- micrograph selection tools
 
-  kang.py      ---- angluar distributino viewing and selection tools
+  kang.py      ---- angluar distribution viewing and selection tools
 
 
 ### Installing
