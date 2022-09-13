@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ang</class>
+ <widget class="QMainWindow" name="ang">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Ang</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>999999</width>
+     <height>999999</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Star_File"/>
+    <addaction name="actionSave_Star_File"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionFade"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuEraser_Percent">
+     <property name="title">
+      <string>Eraser Percent</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="action10"/>
+     <addaction name="action30"/>
+     <addaction name="action50"/>
+     <addaction name="action70"/>
+     <addaction name="action90"/>
+     <addaction name="actionCustom"/>
+    </widget>
+    <addaction name="actionChoose_color"/>
+    <addaction name="actionSet_Brush_Size"/>
+    <addaction name="menuEraser_Percent"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_Star_File">
+   <property name="text">
+    <string>Open Star File</string>
+   </property>
+  </action>
+  <action name="actionFade">
+   <property name="text">
+    <string>Fade</string>
+   </property>
+  </action>
+  <action name="actionChoose_color">
+   <property name="text">
+    <string>Set Color</string>
+   </property>
+  </action>
+  <action name="actionSet_Brush_Size">
+   <property name="text">
+    <string>Set Brush Size</string>
+   </property>
+  </action>
+  <action name="action10">
+   <property name="text">
+    <string>10%</string>
+   </property>
+  </action>
+  <action name="action30">
+   <property name="text">
+    <string>30%</string>
+   </property>
+  </action>
+  <action name="action50">
+   <property name="text">
+    <string>50%</string>
+   </property>
+  </action>
+  <action name="action70">
+   <property name="text">
+    <string>70%</string>
+   </property>
+  </action>
+  <action name="action90">
+   <property name="text">
+    <string>90%</string>
+   </property>
+  </action>
+  <action name="actionCustom">
+   <property name="text">
+    <string>Custom</string>
+   </property>
+  </action>
+  <action name="actionSave_Star_File">
+   <property name="text">
+    <string>Save Star File</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
