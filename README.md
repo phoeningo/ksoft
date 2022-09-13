@@ -1,19 +1,34 @@
 # ksoft 
-# Auth: Fang Kong @ Tsinghua Univ.
 
 
-1: kdisplay.py  ---- micrograph selection tools
+  kdisplay.py  ---- micrograph selection tools
 
-2: kang.py      ---- angluar distributino viewing and selection tools
+  kang.py      ---- angluar distributino viewing and selection tools
 
 
-=====================Usage================
-1. install env, (take conda env as example)
-  $ conda create -n ksoft python=3.7
-  $ conda env update -n ksoft --file centos.yaml
-2. activate env and use ksoft ( maybe you should add this folder to $PATH and create soft link for quick use )
-  $ conda activate ksoft
-  ( if you has link kdisplay.py as kd)
-  $ kd
-  
-  
+### Installing
+
+Download files and then
+
+Create a new (conda) env 
+
+    conda create -n ksoft python=3.7
+
+And install some packages from exported yaml file
+
+    conda env update -n ksoft --file centos.yaml
+
+
+
+
+## Authors
+
+  - **Fang Kong @ Tsinghua Univ.**
+
+
+## License
+
+This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
+Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
+details
+
