@@ -1,4 +1,3 @@
-#Author : Fang Kong @ Tsinghua Univ.
 import numpy as np
 #import mrcfile
 import time

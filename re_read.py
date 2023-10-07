@@ -1,5 +1,5 @@
 # Author: Fang K.
-# 
+# Contact Me : kongf21@mails.tsinghua.edu.cn
 import numpy as np
 
 import os
@@ -31,7 +31,7 @@ def find_string(query_string,head_file='tmp_head'):
 
 def make_head(filename):
   #starfile = open(filename)
-  print(filename)
+  #print(filename)
  # sr = starfile.readline()
   star_head_cmd = "head -n 100 " + filename + " |grep -v mrc > tmp_head"
 
@@ -39,7 +39,7 @@ def make_head(filename):
   start_line_cmd = 'head -n 100 ' + filename + ' |grep -v mrc |wc -l'
   start_line = int(cmd_exec(start_line_cmd, 1))
   #starfile.close()
-  print(start_line)
+  #print(start_line)
   return start_line
 
 
@@ -48,7 +48,7 @@ def get_content(filename):
 
 def read_starfile(filename):
   start_line=make_head(filename)
-  print('start line index:',start_line)
+  #print('start line index:',start_line)
   ang_rot=find_string('_rlnAngleRot')
   ang_tilt=find_string('_rlnAngleTilt')
  # print(ang_rot,ang_tilt)

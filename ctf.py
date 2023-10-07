@@ -34,11 +34,6 @@ def read_mrcfile(filename):
   return read_mrc_data(filep(filename),read_mrc_header(filep(filename)))
 
 
-def norm_mrc(data):
-  n_data=np.array(data)
-  n_max=np.max(n_data)
-  n_min=np.min(n_data)
-  return (n_data-n_min)/(n_max-n_min)
 
 #2D ZERO PADDING
 def zero_padding(arr,out=None):
@@ -111,7 +106,6 @@ def show_mrc(input_mrc,scale=0.1,sigma=0.5):
   img=shape_down(read_mrcfile(input_mrc))
  # check1=time.time()
   #print("read cost: %.3f s" % (check1 - start_time))
-  img=norm_mrc(img)*255
   y,x=img.shape
 
   pad_img=zero_padding(img)
